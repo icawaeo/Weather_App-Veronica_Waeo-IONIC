@@ -1,0 +1,100 @@
+/* Kontainer Utama */
+.weather-container {
+    background-color: #6e8ec4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+}
+
+/* Kartu Cuaca */
+.weather-card {
+    background-color: #88a6db;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar */
+    transition: transform 0.3s ease-in-out; /* Animasi transformasi */
+}
+
+.weather-card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.city-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.weather-icon {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 15px;
+}
+
+.temperature {
+    font-size: 3.2rem;
+    color: #42467a;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.weather-description {
+    font-size: 1.3rem;
+    color: #000;
+    margin-top: 5px;
+}
+
+/* Input Kota */
+.city-input {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 12px 20px; /* Lebih besar */
+    border-radius: 8px; /* Sudut lebih bulat */
+    border: 2px solid #0288d1;
+    background-color: #f5f5f5;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.city-input:focus {
+    border-color: #0277bd; /* Border berubah saat fokus */
+}
+
+/* Tombol Search */
+.search-button {
+    margin-top: 15px;
+    background-color: #0288d1;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi smooth */
+}
+
+.search-button:hover {
+    background-color: #0277bd;
+    transform: translateY(-3px); /* Efek hover dengan gerakan naik */
+}
+
+/* Pesan Error */
+.error-message {
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Custom Header Styling dengan Efek Gradien */
+.custom-header {
+    --background: linear-gradient(90deg, #0277bd, #0288d1);
+    --color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
